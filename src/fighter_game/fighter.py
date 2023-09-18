@@ -6,11 +6,19 @@ class Fighter:
     La classe d'un fighter
     """
     def __init__(self, name, description):
+        v = randrange(1,9)
         self._name = name
         self._description = description
-        self._agility = randrange(1,9)
+        self._agility = v
+        self._strenght = 10-v
         self._healthPoints = 100 # Lors de la création d'une instance, les points de vie valent 100.
         self._equipedWeapon = 'none'
+    
+    def __repr__(self):
+            """
+            methode spe qui represente le fighter
+            """
+            return self.get_name()
             
     def get_name(self):
         """
@@ -38,23 +46,26 @@ class Fighter:
         return self._healthPoints
     
     def get_strenght(self):
-        return(10-self._agility)
+        return self._strenght
     
     def get_equipedWeapon(self):
         return self._equipedWeapon
     
-    def set_weapon(self,weapon):
-        self._equipedWeapon = weapon
+    #def set_weapon(self,weapon):
+        #self._equipedWeapon = weapon
     
     def take_weapon(self,weapon):
         if self.get_equipedWeapon() == 'none' and weapon.get_owner() == 'none':
-            self.set_weapon(weapon.get_name())
-            weapon.set_owner(self.get_name())
+            self._equipedWeapon = weapon
+            weapon._owner = self
+            self._agility -= weapon.get_weight()
+            if self.get_agility() < 1:
+                self._agility = 1
         else:
             if self.get_equipedWeapon() == 'none':
                 print("cette arme est deja equiper par quelqu'un d'autre")
             else:   
-                print(self.get_name(),'a deja une arme equiper')
+                print(self.get_name(),'a deja une arme equiper :')
         return self.get_equipedWeapon()
             
     
@@ -65,11 +76,20 @@ class Fighter:
         '''
        points=int(uniform(0.7,1.0)*10+self.get_strenght()/fighter.get_agility())
        fighter._healthPoints-=points
+       print(self,'a punch',fighter)
        return fighter._healthPoints
     
+    def attack(self,fighter,weapon):
+        if weapon.get_ammos() > 0 and weapon.get_owner() == self:
+            weapon.shoot(fighter)
+        else:
+            self.punch(fighter)
+        return fighter._healthPoints
+            
     def summary(self):
         summary = 'Nom:'+ self.get_name() + '\n' + 'Description:'+ self.get_description() + '\n' + 'Points de vie:' + str(self.get_healthPoints()) + '\n' + 'Agilité:' + str(self.get_agility()) + '\n' + 'Force:' + str(self.get_strenght()) + '\n' + 'Arme:'+ self.get_equipedWeapon()
         return summary
 
+bow_of_light = Weapon('Bow of light','arc de zelda',10,1)
 marcel = Fighter('Marcel', 'The best one') # on instancie avec les variables de la méthode __init__
-Yves_cadour = Fighter('Yves_cadour', 'NSI chef') # on instancie avec les variables de la méthode __init__
+Yves_cadour = Fighter('Yves', 'NSI chef') # on instancie avec les variables de la méthode __init__

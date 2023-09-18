@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/FighterGame.egg-info/PKG-INFO
+src/FighterGame.egg-info/SOURCES.txt
+src/FighterGame.egg-info/dependency_links.txt
+src/FighterGame.egg-info/requires.txt
+src/FighterGame.egg-info/top_level.txt
