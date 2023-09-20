@@ -17,14 +17,36 @@ class FighterManager :
         self._weapons.append(w)
         return w
     
-    def create_fight(self,fighter1,weapon1,fighter2,weapon2):
-        fighter1.take_weapon(weapon1)
-        fighter2.take_weapon(weapon2)
-        combattant,combattu=fighter1,fighter2
-        while combattant.get_healthPoints() >0:
-            combattant.attack(combattu,combattant.get_equipedWeapon())
-            combattant,combattu=combattu,combattant
-        return combattu
+    def create_fight(self,combattant,combattu):
+        if combattant.get_healthPoints() > 0:
+            combattant.attack(combattu)
+            print('pv de',combattu,combattu.get_healthPoints())
+            return self.create_fight(combattu,combattant)
+        else:
+#             self._fighters.remove(combattant)
+            return combattu
+
+#         combattant.attack(combattu)
+#         print('pv de',combattu,combattu.get_healthPoints())
+#         if combattu.get_healthPoints() > 0:
+#             self.create_fight(combattu,combattant)
+#         else:
+#             return combattant
+            
+
+
+#         if combattant.get_healthPoints() > 0:
+#             combattant.attack(combattu)
+#             print('pv de',combattu,combattu.get_healthPoints())
+#             self.create_fight(combattu,combattant)
+#         else:
+#             return combattu
+             
+             
+#         while combattant.get_healthPoints() >0:
+#             combattant.attack(combattu)
+#             combattant,combattu=combattu,combattant
+#         return combattu
         
         
     
@@ -36,3 +58,5 @@ class FighterManager :
         
         
     
+marcel = Fighter('Marcel', 'The best one') # on instancie avec les variables de la méthode __init__
+Yves_cadour = Fighter('Yves', 'NSI chef') # on instancie avec les variables de la méthode __init__ 

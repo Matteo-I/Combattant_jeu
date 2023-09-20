@@ -12,7 +12,7 @@ class Fighter:
         self._agility = v
         self._strenght = 10-v
         self._healthPoints = 100 # Lors de la création d'une instance, les points de vie valent 100.
-        self._equipedWeapon = 'none'
+        self._equipedWeapon = None
     
     def __repr__(self):
             """
@@ -55,7 +55,7 @@ class Fighter:
         #self._equipedWeapon = weapon
     
     def take_weapon(self,weapon):
-        if self.get_equipedWeapon() == 'none' and weapon.get_owner() == 'none':
+        if self.get_equipedWeapon() == None and weapon.get_owner() == 'none':
             self._equipedWeapon = weapon
             weapon._owner = self
             self._agility -= weapon.get_weight()
@@ -79,9 +79,9 @@ class Fighter:
        print(self,'a punch',fighter)
        return fighter._healthPoints
     
-    def attack(self,fighter,weapon):
-        if weapon.get_ammos() > 0 and weapon.get_owner() == self:
-            weapon.shoot(fighter)
+    def attack(self,fighter):
+        if self.get_equipedWeapon() != None and self.get_equipedWeapon().get_ammos() > 0 :
+            self.get_equipedWeapon().shoot(fighter)
         else:
             self.punch(fighter)
         return fighter._healthPoints
@@ -92,4 +92,4 @@ class Fighter:
 
 bow_of_light = Weapon('Bow of light','arc de zelda',10,1)
 marcel = Fighter('Marcel', 'The best one') # on instancie avec les variables de la méthode __init__
-Yves_cadour = Fighter('Yves', 'NSI chef') # on instancie avec les variables de la méthode __init__
+Yves_cadour = Fighter('Yves', 'NSI chef') # on instancie avec les variables de la méthode __init__ 
