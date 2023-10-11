@@ -1,0 +1,116 @@
+
+*** These modified files were found in JOE when it aborted on Tue Sep 12 11:05:20 2023
+*** JOE was aborted because the terminal closed
+
+*** Fichier '(Sans nom)'
+1
+*** Fichier '(Sans nom)'
+syntax
+
+*** Fichier '(Sans nom)'
+root
+
+*** Fichier '/home/m.imbert/Bureau/NSI/Terminal/ProjetsTerm/Fighter/FighterGame/.git/COMMIT_EDITMSG'
+Ajout de la class fighter et weapon
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Sur la branche main
+# Votre branche est à jour avec 'origin/main'.
+#
+# Modifications qui seront validées :
+#	nouveau fichier : src/fighter_game/fighter.py
+#	nouveau fichier : src/fighter_game/fighter_manager.py
+#	nouveau fichier : src/fighter_game/weapon.py
+#
+# Fichiers non suivis:
+#	setup.py
+#
+
+*** Fichier '(Sans nom)'
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExosNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExecicesNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExecicesNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI/Terminal/ProjetsTerm/Fighter/FighterGame/.git/COMMIT_EDITMSG
+
+*** Fichier '* Startup Log *'
+Traitement de '/etc/joe/editorrc'...Traitement de '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
+
+*** These modified files were found in JOE when it aborted on Wed Sep 13 08:04:46 2023
+*** JOE was aborted because the terminal closed
+
+*** Fichier '/home/m.imbert/Bureau/NSI/Terminal/ProjetsTerm/Fighter/FighterGame/.git/COMMIT_EDITMSG'
+
+
+
+Signed-off-by: Matteo-I <imbert-m@saintlouis29.net>
+
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Sur la branche main
+# Votre branche est à jour avec 'origin/main'.
+#
+# Modifications qui seront validées :
+#	nouveau fichier : setup.py
+#
+# Modifications qui ne seront pas validées :
+#	modifié :         src/fighter_game/fighter.py
+#	modifié :         src/fighter_game/fighter_manager.py
+#	modifié :         src/fighter_game/weapon.py
+#
+# Fichiers non suivis:
+#	DEADJOE
+#
+
+*** Fichier '(Sans nom)'
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExosNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExecicesNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExecicesNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI/Terminal/ProjetsTerm/Fighter/FighterGame/.git/COMMIT_EDITMSG
+
+*** Fichier '* Startup Log *'
+Traitement de '/etc/joe/editorrc'...Traitement de '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
+
+*** These modified files were found in JOE when it aborted on Mon Sep 18 15:42:20 2023
+*** JOE was aborted because the terminal closed
+
+*** Fichier '/home/m.imbert/Bureau/NSI/Terminal/ProjetsTerm/Fighter/FighterGame/.git/COMMIT_EDITMSG'
+
+ok
+
+Signed-off-by: Matteo-I <imbert-m@saintlouis29.net>
+
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Sur la branche main
+# Votre branche est à jour avec 'origin/main'.
+#
+# Modifications qui seront validées :
+#	nouveau fichier : DEADJOE
+#	nouveau fichier : setup.py
+#	modifié :         src/fighter_game/fighter.py
+#	modifié :         src/fighter_game/fighter_manager.py
+#	modifié :         src/fighter_game/weapon.py
+#
+
+*** Fichier '(Sans nom)'
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Tp/TP2 Stegano/Steganogaphisation/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExosNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExecicesNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI_1G2/Exos/ExecicesNsi1G2/.git/COMMIT_EDITMSG
+/home/m.imbert/Bureau/NSI/Terminal/ProjetsTerm/Fighter/FighterGame/.git/COMMIT_EDITMSG
+
+*** Fichier '* Startup Log *'
+Traitement de '/etc/joe/editorrc'...Traitement de '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

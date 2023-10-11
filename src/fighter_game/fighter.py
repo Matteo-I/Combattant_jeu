@@ -1,5 +1,5 @@
 from random import randrange , uniform
-from fighter_game.weapon import Weapon
+from weapon import Weapon
 
 class Fighter:
     """

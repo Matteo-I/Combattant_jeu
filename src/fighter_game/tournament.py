@@ -1,6 +1,6 @@
-from fighter import Fighter
-from weapon import Weapon
-from my_queue import Queue
+from fighter_game.fighter import Fighter
+from fighter_game.weapon import Weapon
+from fighter_game.my_queue import Queue
 
 class FighterManager :
     
@@ -26,16 +26,38 @@ class FighterManager :
         else:
 #             self._fighters.remove(combattant)
             return combattu
-    
-    def do_tounament(self):
-        file = Queue()
-        for element in self._fighters:
-            file.enqueue(element)
-        while not file.size() == 1:
-            tant = file.dequeue()
-            ttu = file.dequeue()
-            self.create_fight(tant,ttu)
+
+#         combattant.attack(combattu)
+#         print('pv de',combattu,combattu.get_healthPoints())
+#         if combattu.get_healthPoints() > 0:
+#             self.create_fight(combattu,combattant)
+#         else:
+#             return combattant
             
+
+
+#         if combattant.get_healthPoints() > 0:
+#             combattant.attack(combattu)
+#             print('pv de',combattu,combattu.get_healthPoints())
+#             self.create_fight(combattu,combattant)
+#         else:
+#             return combattu
+             
+             
+#         while combattant.get_healthPoints() >0:
+#             combattant.attack(combattu)
+#             combattant,combattu=combattu,combattant
+#         return combattu
+        
+        
+    
+        
+            
+        
+        
+
+        
+        
     
 marcel = Fighter('Marcel', 'The best one') # on instancie avec les variables de la méthode __init__
 Yves_cadour = Fighter('Yves', 'NSI chef') # on instancie avec les variables de la méthode __init__ 
